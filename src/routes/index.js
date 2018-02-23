@@ -6,10 +6,11 @@ const passportService = require('../services/passport')
 
 const requireAuth = passport.authenticate('jwt', {session: false})
 
+
 const routes = express.Router()
 
 routes.get('/', requireAuth, (req, res) => res.redirect('/albums'))
 routes.use('/albums', albums)
-routes.use(authentication)
+routes.use('/', authentication)
 
 export default routes

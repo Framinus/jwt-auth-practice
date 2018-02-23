@@ -5,11 +5,11 @@ const findUserById = (id) => {
     WHERE id=$1`, id)
 }
 
-const verifyUser = (email, password) => {
+const verifyUser = (email) => {
   return db.one(`
     SELECT * FROM users
-    WHERE email=$1 AND password=$2`,
-    [email, password])
+    WHERE email=$1`,
+    [email])
 }
 
 module.exports = {findUserById, verifyUser}

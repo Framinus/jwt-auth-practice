@@ -8,6 +8,10 @@ const tokenForUser = (user) => {
   return jwt.encode({sub: user.id, iat: timestamp}, config.secret)
 }
 
+const signin = (req, res, next) => {
+  res.send({ token: tokenForUser(req.user) })
+}
+
 const signup = (req, res, next) => {
 
   const {name, email, password} = req.body
@@ -34,4 +38,4 @@ const signup = (req, res, next) => {
     })
 }
 
-module.exports = {signup}
+module.exports = {signup, signin}
