@@ -1,6 +1,6 @@
 # JWT Server Side Boilerplate
 
-This is a PostgreSQL and Pg-Promise version of Stephen Grider's Advanced React and Redux serverside authentication strategy using JSON Web Tokens. The underlying application structure comes from Learners Guild's sample apprenticeship phase challenge. (Will add link later.)
+This is a PostgreSQL and Pg-Promise version of Stephen Grider's Advanced React and Redux serverside authentication strategy using JSON Web Tokens. The underlying application structure comes from Learners Guild's sample apprenticeship phase challenge. (Will add link later.) 
 
 ## Getting Started
 
